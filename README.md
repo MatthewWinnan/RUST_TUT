@@ -5,3 +5,7 @@ All RUST projects are stored under `projects` and built using cargo while tool-c
 versioning is being handled by `NIX`.
 
 My first batch of projects will be based on [The Rust Book](https://doc.rust-lang.org/book/title-page.html)
+
+## Notes
+
+`NB` when you want to use the [direnv](https://direnv.net/) shell hook remember to actually configure it and run `direnv allow`.
