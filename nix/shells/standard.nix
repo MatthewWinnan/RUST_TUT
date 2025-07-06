@@ -1,17 +1,19 @@
 {
   mkShell,
   cargo,
-  rustup,
-  just,
   rustc,
+  just,
+  clippy,
+  rustfmt,
   ...
 }:
 mkShell {
   packages = [
     cargo
-    rustup
-    just
     rustc
+    just
+    clippy
+    rustfmt
   ];
 
   shellHook = ''

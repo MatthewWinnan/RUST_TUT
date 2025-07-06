@@ -22,6 +22,9 @@
     # Formatter of choice
     formatter = forAllSystemsInputs (inputs: system: inputs.alejandra.defaultPackage.${system});
 
+    # Build packages
+    packages = forAllSystemsInputs (inputs: system: import ./nix/derivations {inherit system inputs;});
+
     # My own local devshells
     devShells = forAllSystemsInputs (inputs: system: import ./nix/shells {inherit system inputs;});
   };
